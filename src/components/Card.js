@@ -3,6 +3,7 @@ import React from "react";
 function Card(props) {
     return (
         <div className="card">
+            <div className="card--badge">SOLD OUT</div>
             <img className="card--image" src={`../images/${props.img}`} />
             <div className="card--stats">
                 <img className="card--star" src="../images/star.png" />

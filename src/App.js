@@ -10,25 +10,22 @@ function App() {
     return (
       < Card
         key={item.id}
-        img = {item.coverImg}
-        rating = {item.stats.rating}
-        reviewCount = {item.stats.reviewCount}
-        location = {item.location}
-        title = {item.title}
-        price = {item.price}
+        item={item} // or {...item}
       />
     )
   })
 
   return (
     <div>
-      < Navbar/>
-      {/* < Hero/> */}
-      <section className="cards--list">
-        {cards}
-      </section>
+        <Navbar />
+        <Hero />
+        <section className="cards-list">
+            {cards}
+        </section>
     </div>
   );
 }
 
 export default App;
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
